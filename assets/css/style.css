@@ -4,9 +4,13 @@
 :root {
     --primary-color: #0F1B4C;
 }
+html,body{
+    scroll-behavior: smooth;
+}
 
 html {
     font-size: 62.5%;
+    
 }
 
 body {
@@ -48,16 +52,28 @@ a {
 }
 
 /* head */
-.header {
+
+.fixed-header{
     background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.hero-warp {
+    background-color: #e6f0ff;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 90px);
+    /* display: flex; */
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
+    /* background-color: yellow; */
 }
 
 .navbar ul {
